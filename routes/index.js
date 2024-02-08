@@ -14,6 +14,11 @@ const messages = [
     }
 ];
 
+router
+    .route('/new')
+    .get(function (req, res, next) {
+        res.render('form');
+    })
 router.get('/', function (req, res, next) {
     res.render('index', { title: 'Mini Messageboard', messages });
 });
