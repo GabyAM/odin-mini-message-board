@@ -16,6 +16,15 @@ body {
     padding: 1em;
     background-color: var(--bg-color);
 }
+
+header {
+    background-color: var(--primary-color);
+    border-radius: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    padding: 0.5em 2em;
+}
+
 }
 
 a {
