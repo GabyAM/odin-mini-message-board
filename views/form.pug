@@ -2,3 +2,9 @@ extends layout
 
 block content 
     h1 Send a message
+    form(action="/new" method="POST")
+        label User name
+            input(type="text" name="messageUser")
+        label Message
+            textarea(name="messageText")
+        button Send
