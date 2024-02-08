@@ -25,8 +25,66 @@ header {
     padding: 0.5em 2em;
 }
 
+.speech-bubble {
+    width: 100%;
+    border-radius: 1.5em;
+    z-index: 1;
+    font-size: 24px;
+    display: grid;
+}
+.speech-bubble.right {
+    transform: rotateY(180deg);
+}
+.speech-bubble.right > span,
+.speech-bubble.right > p {
+    transform: rotateY(-180deg);
+    justify-self: left;
+}
+.speech-bubble::before {
+    content: '';
+    width: 0;
+    height: 0;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    border-top: 20px solid currentColor;
+
+    position: absolute;
+    z-index: -1;
+    transform: translate(-60%, 80%) rotate(60deg) scale(0.8);
 }
 
-a {
-  color: #00B7FF;
+header .speech-bubble:first-of-type {
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+header .speech-bubble:first-of-type span {
+    color: white;
+    padding-left: 1rem;
+}
+
+header .speech-bubble:last-of-type {
+    background-color: white;
+    color: white;
+}
+header .speech-bubble:last-of-type span {
+    color: black;
+    padding-right: 1rem;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.25rem;
+    font-weight: 600;
+
+    max-width: 150px;
+}
+
+.logo > span {
+    color: white;
+    font-size: 18px;
 }
