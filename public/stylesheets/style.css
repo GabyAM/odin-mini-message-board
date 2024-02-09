@@ -21,16 +21,21 @@
 
 body,
 html {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 body {
     font-family: 'Jost', sans-serif;
     padding: 1em;
     background-color: var(--bg-color);
+}
+
+.root {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 header {
