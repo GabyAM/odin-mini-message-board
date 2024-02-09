@@ -60,9 +60,11 @@ header {
 
     border-top: 20px solid currentColor;
 
-    position: absolute;
+    position: relative;
+    top: 100%;
+    left: 0;
     z-index: -1;
-    transform: translate(-60%, 80%) rotate(60deg) scale(0.8);
+    transform: translate(-50%, -60%) rotate(60deg) scale(0.8);
 }
 
 header .speech-bubble:first-of-type {
@@ -98,7 +100,6 @@ header .speech-bubble:last-of-type span {
     height: 80px;
 }
 
-.logo > span {
-    color: white;
-    font-size: 18px;
+p {
+    text-wrap: pretty;
 }
