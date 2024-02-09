@@ -1,10 +1,14 @@
 extends layout 
 
 block content 
-    h1 Send a message
-    form(action="/new" method="POST")
-        label User name
-            input(type="text" name="messageUser")
-        label Message
-            textarea(name="messageText")
-        button Send
+    div(class="main-content form-container")
+        h1 Send a message!
+        form(action="/new" method="POST")
+            fieldset
+                div
+                    label(for="messageUser") User name
+                    input(type="text" name="messageUser" required=true)
+                div
+                    label(for="messageText") Message
+                    textarea(name="messageText" required=true)
+            button Send
