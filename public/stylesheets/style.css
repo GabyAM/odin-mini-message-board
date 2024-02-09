@@ -10,6 +10,13 @@
     --bg-color: hsl(223, 55%, 94%);
     --primary-color: hsl(212, 100%, 50%);
     --secondary-color: hsl(194, 100%, 50%);
+    --dark-gray: hsl(0, 0%, 20%);
+    --regular-gray: hsl(0, 0%, 50%);
+    --light-gray: hsl(0, 0%, 90%);
+    --light-cyan: hsl(194, 100%, 90%);
+    --dark-cyan: hsl(194, 100%, 20%);
+    --light-blue: hsl(212, 100%, 90%);
+    --dark-blue: hsl(212, 100%, 20%);
 }
 
 body,
@@ -65,6 +72,30 @@ header {
     left: 0;
     z-index: -1;
     transform: translate(-50%, -60%) rotate(60deg) scale(0.8);
+}
+
+.speech-bubble.blue-bubble {
+    background-color: var(--light-blue);
+    color: var(--light-blue);
+}
+.speech-bubble.blue-bubble p {
+    color: var(--dark-blue);
+}
+
+.speech-bubble.gray-bubble {
+    background-color: var(--light-gray);
+    color: var(--light-gray);
+}
+.speech-bubble.gray-bubble p {
+    color: var(--dark-gray);
+}
+
+.speech-bubble.cyan-bubble {
+    background-color: var(--light-cyan);
+    color: var(--light-cyan);
+}
+.speech-bubble.cyan-bubble p {
+    color: var(--dark-cyan);
 }
 
 .logo {

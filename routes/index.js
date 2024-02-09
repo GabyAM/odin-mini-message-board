@@ -14,6 +14,17 @@ const messages = [
     }
 ];
 
+const messageColors = ['gray', 'blue', 'cyan'];
+function getMessageColors() {
+    const colors = [];
+    for (let i = 0; i < messages.length; i++) {
+        colors.push(
+            messageColors[Math.floor(Math.random() * messageColors.length)]
+        );
+    }
+    return colors;
+}
+
 router
     .route('/new')
     .get(function (req, res, next) {
@@ -31,7 +42,11 @@ router
     });
 
 router.get('/', function (req, res, next) {
-    res.render('index', { title: 'Mini Messageboard', messages });
+    res.render('index', {
+        title: 'Mini Messageboard',
+        messages,
+        colors: getMessageColors()
+    });
 });
 
 module.exports = router;

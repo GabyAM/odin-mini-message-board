@@ -9,7 +9,7 @@ block content
               div(class="user-info")
                 span= val.user
                 div(class="message-image")
-              div(class="speech-bubble")
+              div(class="speech-bubble " + colors[index] + "-bubble")
                 p= val.text
       else 
         h2 There's no messages...
