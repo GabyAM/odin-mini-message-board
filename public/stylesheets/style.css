@@ -28,9 +28,9 @@ body {
     font-family: 'Jost', sans-serif;
     padding: 1em;
     background-color: var(--bg-color);
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
-    overflow: hidden;
 }
 
 header {
