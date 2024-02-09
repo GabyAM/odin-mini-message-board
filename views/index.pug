@@ -1,10 +1,15 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  ul
-    each val in messages
-      div
-        p=val.text
-        span=val.user
+  div(class="message-board")
+      if messages
+        ul(class="messages")
+          each val, index in messages
+            div(class="message")
+              div(class="user-info")
+                span= val.user
+                div(class="message-image")
+              div(class="speech-bubble")
+                p= val.text
+      else 
+        h2 There's no messages...
