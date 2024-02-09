@@ -2,11 +2,13 @@ doctype html
 html
   head
     title= title
+    meta(content="width=device-width, initial-scale=1" name="viewport")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    header
-        div(class="logo")
-        div(class="links")
-          a(href="/") Board
-          a(href="/new") New
-    block content
+    div(class="root")
+      header
+          div(class="logo")
+          div(class="links")
+            a(href="/") Board
+            a(href="/new") New
+      block content
