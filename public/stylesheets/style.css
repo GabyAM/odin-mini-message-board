@@ -75,8 +75,16 @@ header {
     aspect-ratio: 1/0.7;
     height: 60px;
 }
+
+.links {
+    display: flex;
+    gap: 2em;
+}
+.links a {
+    text-decoration: none;
     color: white;
-    padding-left: 1rem;
+    font-size: 18px;
+    font-weight: 600;
 }
 
     background-color: white;
