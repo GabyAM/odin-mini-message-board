@@ -118,14 +118,11 @@ header {
     font-weight: 600;
 }
 
-.message-board {
+.main-content {
     background-color: white;
     max-width: 600px;
     border-radius: 4rem;
     padding: 3em 2em;
-    scrollbar-width: none;
-
-    flex: 1;
 }
 
 .messages {
