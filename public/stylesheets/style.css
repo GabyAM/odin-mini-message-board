@@ -146,9 +146,14 @@ header {
 .user-info {
     grid-area: 1/1/3/2;
     align-self: flex-end;
+    max-width: 80px;
 }
 .user-info span {
+    display: block;
     color: var(--regular-gray);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .message-image {
     background-color: var(--primary-color);
